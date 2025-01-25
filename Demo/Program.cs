@@ -1,4 +1,7 @@
-﻿namespace Demo
+﻿using System;
+using System.Linq;
+
+namespace Demo
 {
     internal class Program
     {
@@ -24,11 +27,30 @@
             //ball.OnBallChanged -= player11.Run;  //-= To Fired(UnSubscribe)
             //ball.Location = new Location(1, 2, 3); //Change Location to see the result
             #endregion
-
             #region LinQ
+            //List<int> Num = new List<int>(10) { 1, 2, 3, 4, 5, 7, 9 };
+            //List<int> Odd =Num.Where(N => N % 2==1).ToList();
+            //foreach (int i  in Odd)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+            #region LinQ Syntax
+
             List<int> Num = new List<int>(10) { 1, 2, 3, 4, 5, 7, 9 };
-            List<int> Odd =Num.Where(N => N % 2==1).ToList();
-            foreach (int i  in Odd)
+            //Fluent Syntax: (C# Code)
+            //List<int> odd = Enumerable.Where(Num, N => N % 2 == 1).ToList(); // Static Method 
+            //List<int> odd = Num.Where(N => N % 2 == 1).ToList();  // Extension Method
+            //foreach (int i in odd)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            // Query Syntax: (Query Expression) ==> Like SQL Server Style
+            var odd = from N in Num  // Num ==> Source
+                      where N % 2 == 1
+                      select N;
+            foreach (int i in odd)
             {
                 Console.WriteLine(i);
             }
