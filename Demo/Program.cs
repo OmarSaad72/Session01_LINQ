@@ -104,6 +104,37 @@ namespace Demo
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Transformation(Projection) Operators
+            //Select:
+            //var result = ProdectList.Select(P => P.ProductName);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            ////var result = CustomerList.Select(C => C.CustomerName);
+            //var result = from C in CustomerList
+            //             select C.CustomerName;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //var result = ProductList.Where(P => P.UnitsInStouck > 0)
+            //.Select(P => $"{P.ProductId} & {P.ProductName}");
+            //var result = from P in ProductList
+            //             where P.UnitsInStouck > 0
+            //             select P.ProductID & P.ProductName;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Select Many:
+            //var result = CustomerList.SelectMany(C => C.Orders);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
