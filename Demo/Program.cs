@@ -77,6 +77,33 @@ namespace Demo
             #region Data Setup
 
             #endregion
+            #region Filtration(Restrication) Operators (where)
+            //Get Product Out Of Stock:
+            //var result = ProductList.Where(P => P.unitInStock == 0); //Fluent Syntax
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Get Product In Stock:
+            //var result = ProductList.Where(P => P.unitInStock > 0 && P.Category = "Meat/Poultry"); //Fluent Syntax
+            //var result = from P in ProductList
+            //             where P.unitInStock > 0 && P.Category = "Meat/Poultry"
+            //             select P; // Query Syntax
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Get Product Out Of Stock In First 10 Elements: 
+            //Indexed Where
+            //Valid Only Fluent Syntax
+            //var result = ProductList.Where((P, I) => I < 10 && P.unitInStock == 0); //Fluent Syntax
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
