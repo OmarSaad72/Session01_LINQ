@@ -27,6 +27,7 @@ namespace Demo
             //ball.OnBallChanged -= player11.Run;  //-= To Fired(UnSubscribe)
             //ball.Location = new Location(1, 2, 3); //Change Location to see the result
             #endregion
+
             #region LinQ
             //List<int> Num = new List<int>(10) { 1, 2, 3, 4, 5, 7, 9 };
             //List<int> Odd =Num.Where(N => N % 2==1).ToList();
@@ -65,13 +66,16 @@ namespace Demo
             //}
 
             //Immediate Execution
-            List<int> Num = new List<int>(10) { 1, 2, 3, 4, 5, 7, 9 };
-            var result = Num.Where(N => N % 2 == 1).ToList();
-            Num.AddRange(new int[] { 11, 13, 14, 12, 15 });
-            foreach (int i in result)
-            {
-                Console.WriteLine(i);
-            }
+            //List<int> Num = new List<int>(10) { 1, 2, 3, 4, 5, 7, 9 };
+            //var result = Num.Where(N => N % 2 == 1).ToList();
+            //Num.AddRange(new int[] { 11, 13, 14, 12, 15 });
+            //foreach (int i in result)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+            #region Data Setup
+
             #endregion
         }
     }
