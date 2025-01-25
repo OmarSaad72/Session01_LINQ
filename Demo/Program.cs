@@ -135,6 +135,47 @@ namespace Demo
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Ordering Operators
+            //:Ordering Price ASC:  Default
+            //var result = ProductList.OrderBy(P => P.UnitPrice);
+            //var result = from P in ProductList
+            //             orderby P.UnitPrice 
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //:Ordering Price DESC:
+            //var result = ProductList.OrderByDescending(P => P.UnitPrice);
+            //var result = from P in ProductList
+            //             orderby P.UnitPrice descending
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //:Ordering Price ASC & Number Of Items In Stock
+            //var result = ProductList.OrderBy(P => P.UnitPrice).ThenBy(P => P.UnitInStock);
+            //result = from P in ProductList
+            //         orderby P.UnitPrice ascending , P.UnitInStock descending
+            //         select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Reverse:
+            //var result = ProductList.Where(P => P.UnitInStock == 0).Reverse();
+            //var result = from P in ProductList
+            //             orderby P.UnitPrice
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
