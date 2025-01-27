@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using static Demo.ListGenerator;
 
 namespace Demo
 {
@@ -79,17 +80,17 @@ namespace Demo
             #endregion
             #region Filtration(Restrication) Operators (where)
             //Get Product Out Of Stock:
-            //var result = ProductList.Where(P => P.unitInStock == 0); //Fluent Syntax
+            //var result = ProductList.Where(P => P.UnitsInStock == 0); //Fluent Syntax
             //foreach (var item in result)
             //{
             //    Console.WriteLine(item);
             //}
 
             //Get Product In Stock:
-            //var result = ProductList.Where(P => P.unitInStock > 0 && P.Category = "Meat/Poultry"); //Fluent Syntax
-            //var result = from P in ProductList
-            //             where P.unitInStock > 0 && P.Category = "Meat/Poultry"
-            //             select P; // Query Syntax
+            //var result = ProductList.Where(P => P.UnitsInStock > 0 && P.Category = "Meat/Poultry"); //Fluent Syntax
+            ////var result = from P in ProductList
+            ////             where P.UnitsInStock > 0 && P.Category = "Meat/Poultry"
+            ////             select P; // Query Syntax
             //foreach (var item in result)
             //{
             //    Console.WriteLine(item);
